@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   background-color: #f5e1ec;
+   font-family:'Rubik';
+   
+   
+}
+
+.cuerpo{
+    margin-right: 100px;
+    margin-left: 100px;
+    
+}
+.productos {
+    padding:  100px 100px 100px;
+    
+}
+
+.item {
+    background-color:white;
+    border-radius: 10px;
+}
+
+
+
+.item p {
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+
+
+}
+
+.item p:hover {
+    color: palevioletred;
+    cursor: pointer; /*para cambiar el estilo de click o cursor */
+}
+
+.contenedor {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    max-width: 100%;
+}
+
+.moshi_img {
+    width: 100%; /* Hace que la imagen ocupe el 100% del ancho de su contenedor */
+    max-height: 200px; /* Mantiene la proporción de la imagen ajustando automáticamente su altura */
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    border-radius: 10px;
+}
+
+
+.moshi_img:hover {
+    transform: scale(1.1);
+
+}
+
+.navbar {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    position: fixed;   /*  funcion para que el navbar pueda seguir al usuario   */
+    width: 100%;
+    background-color: #f4c1df;
+    color: #fff;
+    top: 0%;
+    z-index: 1000; 
+    padding: 10px 0; 
+
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.navbar a:hover {
+    color: palevioletred;  /*hover es para aplicar funciones al pasar el mouse como que cambie de color la letra */
+}
+
+@media screen and (max-width: 600px){
+    .navbar {
+        flex-direction: column;
+    }
+}

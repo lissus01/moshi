@@ -26,20 +26,38 @@ body {
 .item {
     background-color:white;
     border-radius: 10px;
+    text-align: center;
 }
 
 
 
-.item p {
-    text-align: center;
+.item p {    
     padding: 10px 10px 10px 10px;
-
-
 }
 
 .item p:hover {
     color: palevioletred;
     cursor: pointer; /*para cambiar el estilo de click o cursor */
+}
+
+.item h3{
+    color: #ff00ae;
+    font-weight: 500;
+}
+
+.item button{ 
+
+border: 0;
+padding: 10px;
+font-family: 'Rubik';
+background-color:rgba(#ff00ae,0.7) ;
+margin: 10px; 
+
+}
+
+
+.item button:hover {
+    color: rgb(234, 104, 150);
 }
 
 .contenedor {
@@ -72,8 +90,9 @@ body {
     align-items: center;
     position: fixed;   /*  funcion para que el navbar pueda seguir al usuario   */
     width: 100%;
-    background-color: #f4c1df;
+    background-color: #f1a1d0;
     color: #fff;
+    box-shadow: 0 2px 10px rgba(170, 8, 94, 0.5);
     top: 0%;
     z-index: 1000; 
     padding: 10px 0; 

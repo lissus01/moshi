@@ -89,8 +89,7 @@ margin: 10px;
     display: flex; 
     justify-content: center;
     align-items: center;
-    position: fixed;   /*  funcion para que el navbar pueda seguir al usuario   */
-    width: 100%;
+     /* position: fixed  funcion para que el navbar pueda seguir al usuario   */
     background-color: #bb4d61;
     color: #fff;
     top: 0%;
@@ -104,11 +103,11 @@ margin: 10px;
     display: flex; 
     justify-content: center;
     align-items: center;
-    position: fixed;   /*  funcion para que el navbar pueda seguir al usuario   */
-    width: 100%;
+     /* position: fixed  funcion para que el navbar pueda seguir al usuario   */
+     /*width: 100%;   funcion para el largo de elementos */
     background-color: #ffe76d;
     color: #551616;
-    top: 8%;
+    top: 50px;
     z-index: 1000; 
     padding: 10px 0; 
 
@@ -130,6 +129,7 @@ margin: 10px;
     .navbar {
         flex-direction: column;
     }
+
 }
 
 .btn-primary {

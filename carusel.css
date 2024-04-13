@@ -3,6 +3,7 @@
   align-items: center;
   display: flex;
   height: 200px;
+
 }
 
 .carrusel {
@@ -10,6 +11,7 @@
   width: 80%; /* Ancho del carrusel */
   height: 200px; /* Altura fija para todas las imágenes */
   position: relative;
+  
 
 } 
 
@@ -20,10 +22,12 @@
   object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
   height: 400px;
   border-radius: 10px;
+
 }
 
 .carrusel-imagenes img:first-child {
   display: block;
+  
 }
 
 button {
@@ -35,7 +39,7 @@ button {
   border: none;
   cursor: pointer;
   padding: 10px;
-  z-index: 100;
+
 }
 
 #anterior {
@@ -44,4 +48,13 @@ button {
 
 #siguiente {
   right: 0;
+}
+
+@media screen and (max-width: 600px){
+  .carrusel {
+    width: 80%; /* Ancho del carrusel */
+    height: 200px; /* Altura fija para todas las imágenes */
+    position: relative;
+    z-index: -1;
+  } 
 }

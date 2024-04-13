@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="carrito.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/ce186f4474.js" crossorigin="anonymous"></script>
+    <title>Moshi Store</title>
+</head>
+<body>
+    <nav class="navbar"> 
+        <a href="principal.html">INICIO</a>
+        <a href="productos.html">PRODUCTOS</a>
+        <a href="ofertas.html">OFERTAS</a>
+        <a href="nosotros.html">NOSOTROS</a>
+        <a href="contactanos.html">CONTACTANOS</a>
+    </nav>
+
+
+    <nav class="navbar-peque"> 
+        <a >˗ˏˋ 🍒 ˎˊ˗  NUESTRAS OFERTAS ˗ˏˋ 🍒 ˎˊ˗</a>
+    </nav>
+
+
+    <section class="productos">
+     <div class="contenedor">
+        <div class="item">
+            <img src="imagenes/dulce_14.jpg" class="moshi_img">
+            <h3>Set Diy Candy</h3>
+            <p> Trio de set's dulces para preparar</p>
+            
+            <p class="precio">$3.500</p>
+            <button class="añadir-carrito" data-name="Set Diy Candy" data-price="3500">  Agregar al carrito!</button>
+        </div>
+        
+
+        <div class="item">
+            <img src="imagenes/dulce_15.jpg" class="moshi_img">
+            <h3>Blueberry Pocky</h3>
+            <p>Galleta bañada en crema sabor arandanos ♡
+            </p>
+            <p class="precio">$1000</p>
+            <button class="añadir-carrito" data-name="Blueberry Pocky" data-price="1000">Agregar al carrito!</button>
+            
+        </div>
+
+        <div class="item">
+            <img src="imagenes/imagen_chicle.webp" class="moshi_img">
+            <h3>Chewing gum Blueberry</h3>
+            <p>Chicle/ Goma de mascar sabor arandanos ♡ </p>
+             <p class="precio">$1.500</p>
+             <button class="añadir-carrito" data-name="Chewing gum Blueberry" data-price="1500">Agregar al carrito!</button>
+        </div>
+
+        <div class="item">
+            <img src="imagenes/dulce_11.jpg" class="moshi_img">
+            <h3>Gudetama Chocolate</h3>
+            <p>Chocolates rellenos sabor crema⊹ ࣪ ˖</p>
+            <p class="precio">$2.000</p>
+            <button class="añadir-carrito" data-name="Gudetama Chocolate" data-price="2000">Agregar al carrito!</button>
+
+        </div>
+
+        <div class="item">
+            <img src="imagenes/dulce_20.jpg" class="moshi_img">
+            <h3>Kitty Noodles</h3>
+            <p> Cuarteto Ramen instantaneo sabor pollo ⊹ ࣪ ˖</p>
+            <p class="precio">$4.990</p>
+            <button class="añadir-carrito" data-name="Kitty Noodles" data-price="4990">Agregar al carrito!</button>
+
+        </div>
+
+        
+
+        </div>
+        
+     </div>
+    </section>
+    
+    <div class="carrito">
+        <button class="carrito-boton" id="carrito-boton-id"><i class="fa-solid fa-cart-shopping"></i></button>
+        <div class="carrito-panel" id="carrito-panel-id">
+            <button class="carrito-cerrar" id="carrito-cerrar-id"><i class="fa-regular fa-circle-xmark"></i></button>
+            <h2>carrito de compras</h2>
+            <ul class="carrito-items"></ul>
+            <div class="carrito-total">Total:<span id="carrito-total-id"> $0</span></div>
+        </div>
+    </div>
+    <script src="carrito.js"></script>
+</body>
+</html>

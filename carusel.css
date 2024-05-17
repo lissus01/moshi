@@ -11,8 +11,7 @@
   width: 80%; /* Ancho del carrusel */
   height: 200px; /* Altura fija para todas las imágenes */
   position: relative;
-  
-
+  z-index: 1;
 } 
 
 .carrusel-imagenes img {
